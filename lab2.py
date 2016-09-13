@@ -5,7 +5,7 @@
 import math
 
 #The sheep is 300 meters away
-def sheep_launcher(v, theta):
+def sheep_launcher(*args):
     g = 9.8
     sheep = 300
 
@@ -34,6 +34,8 @@ def sheep_launcher(v, theta):
     else:
         print('You feed the sheep!')
 
+#Calling the sheep_laucher fucntion for 3 trys.
+print("You have three trys to hit the sheep. Good Luck!")
 for i in range(0, 3):
-    sheep_launcher(v, theta)
+    sheep_launcher()
 
